@@ -10,6 +10,28 @@ This library is using API Client Communicator under PHP Socket, thanks to the re
 
 ## Changelog
 
+### **1.6.2 ( Enhancement, Feature )**
+
+1. Update commands and their parameters into the following methods:
+   - `router_switch()`,
+   - `router_switch_port()`,
+   - `router_switch_port_isolation()`,
+
+
+2. Add new methods :
+   - `router_switch_rule()`
+
+### **1.5.3 ( Bugfix, Feature )**
+
+1. Add new methods :
+   - `system_resource()`,
+   - `system_resource_cpu()`,
+   - `system_resource_irq()`,
+   - `system_resource_pci()`,
+   - `system_resource_usb()`,
+   - `interface_bridge_calea()`,
+   - `interface_bridge_filter()`,
+
 ### **1.5.3 ( Bugfix )**
 
 1. Add message handler for `!trap`, `!re`, `!done`, and `!fatal` type under the `send()` method.
@@ -52,7 +74,7 @@ Under composer, just copy this command to begin add this library into your proje
 
 ## Using the Library
 
-If you are using Composer Project such Laravel Framework, you can just call the library under `Erditya\RouterOSInstance` class. As follows : 
+If you are using Composer Project such Laravel Framework, you can just call the library under `Erditya\RouterOSInstance` class. As follows :
 
 
 ```php
@@ -121,14 +143,14 @@ Or, another way to approach :
 ```
 
 ---
-    
+
 ## Available Methods
 
 List of all methods available in this library at this version :
 
 1. **General**
-    - `connect()`
-    - `is_connected()`
+   - `connect()`
+   - `is_connected()`
 
 2. **Interface**
    - `interface_bridge()`
